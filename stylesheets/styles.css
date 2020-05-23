@@ -1,0 +1,206 @@
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  letter-spacing: 4px;
+}
+h1,h2{
+  color: #60519b;
+}
+h3{
+  color: #907dda;
+}
+p{
+  color: #BDC4D0;
+}
+#home
+{
+  overflow: hidden ;
+}
+.icon
+{
+  color: aliceblue;
+  position: relative;
+  font-size: 2rem;
+  padding-right: 20px;
+   top: 200px;
+  text-align: left; 
+}
+.icon:hover
+{
+  color: gray;
+}
+#head{
+   color: rgb(199, 204, 209) ;
+    position: relative;
+    top: -20px;
+    font-family: 'Sacramento', cursive;
+    font-size: 8rem;
+    text-align: center;
+   }
+   /* .nav-design{
+     color: aliceblue;
+   } */
+   .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  }
+  .image{
+      position: relative;
+      border: 2px black solid;
+      border-radius: 50%;
+      background-image: url(../assets/myimage.jpg);
+      background-size: cover;
+      margin: 0 auto;
+      width: 470px;
+      height: 470px;
+  }
+   .about
+   {
+     padding-top: 90px ;
+   }
+   .gif{
+    width:18rem;
+    height: 18rem;
+    margin: 0 auto;
+    
+}
+ 
+#home p {
+  margin: 0;
+  padding: 25px 0;
+  text-align: center;
+  text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5), 1px 1px 3px rgba(0, 0, 0, 0.3);
+  line-height: 26px;
+  color: #e7e6f1;
+}
+.service-type{
+  padding-top:90px ;
+}
+
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+   /* ----custom button---- */
+  .myButton {
+    box-shadow:inset 0px 1px 0px 0px #efdcfb;
+    background:linear-gradient(to bottom, #dfbdfa 5%, #907dda 100%);
+    background-color:#dfbdfa;
+    border-radius:20px;
+    border:1px solid #c584f3;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    text-align: center;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:2px 29px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #9752cc;
+  }
+  .myButton:hover {
+    background:linear-gradient(to bottom, #907dda 5%, #dfbdfa 100%);
+    background-color:#bc80ea;
+    text-decoration: none;
+  }
+  .myButton:active {
+    position:relative;
+    top:1px;
+  }
+   /* -----backtotopCSS--- */
+   #button {
+    display: inline-block;
+    background-color:#60519b;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* -----Responsiveness---- */
+  @media only screen and (max-width: 1200px) {
+     
+  #head{
+      font-size: 6rem;
+  }
+  #sub{
+    font-size: 2rem;
+  }
+   .icon{
+     font-size: 1.5rem;
+   }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+     
+    #head{
+        font-size: 6rem;
+    }
+    
+    
+    }
+    @media only screen and (max-width: 980px) {
+     
+      #head{
+          font-size: 4rem;
+      }
+      #sub{
+        font-size: 1.5rem;
+      }
+      .icon{
+        top: 150px;
+        font-size: 1rem;
+      }
+    }
+    @media only screen and (max-width: 560px) {
+     
+      #head{
+          font-size: 3rem;
+      }
+      
+      .image{
+        width: 300px;
+        height: 300px;
+      }
+      .icon{
+        top: 100px;
+      }
+    }
